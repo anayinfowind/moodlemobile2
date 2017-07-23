@@ -21,7 +21,6 @@
                 <a menu-close mm-user-link userid="{{siteinfo.userid}}" class="item item-avatar item-icon-right full-image">
                     <img ng-src="{{siteinfo.userpictureurl}}" alt="{{ 'mm.core.pictureof' | translate:{$a: siteinfo.fullname} }}" role="presentation" mm-external-content>
                     <h2>{{siteinfo.fullname}}</h2>
-                    <p><mm-format-text watch="true">{{siteinfo.sitename}}</mm-format-text></p>
                     <i class="icon ion-ios-arrow-right"></i>
                 </a>
             </div>
@@ -47,7 +46,7 @@
                             <i class="icon {{item.icon}}"></i>{{item.label}}
                         </a>
                     </li>
-                    <li ng-if="showWeb">
+                    <!--<li ng-if="showWeb">
                         <a menu-close class="item item-icon-left" ng-href="{{siteinfo.siteurl}}" mm-link auto-login="yes" title="{{ 'mm.sidemenu.website' | translate}}">
                             <i class="icon ion-earth"></i>{{ 'mm.sidemenu.website' | translate}}
                         </a>
@@ -57,10 +56,10 @@
                             <i class="icon ion-help-buoy"></i>{{ 'mm.sidemenu.help' | translate}}
                         </a>
                     </li>
-                    <li class="item item-divider"></li>
+                    <li class="item item-divider"></li>-->
                     <li>
                         <a menu-close class="item item-icon-left" ui-sref="site.mm_settings" title="{{ 'mm.sidemenu.appsettings' | translate}}">
-                            <i class="icon ion-gear-b"></i>{{ 'mm.sidemenu.appsettings' | translate}}
+                            <i class="icon ion-ios-gear-outline"></i>{{ 'mm.sidemenu.appsettings' | translate}}
                         </a>
                     </li>
                     <li>
@@ -70,7 +69,12 @@
                     </li>
                 </ul>
             </nav>
-
+			<div class="bar bar-footer bar-side-menu vonkfooter">
+				<div class="vonkfootercontainer">
+					<img src="http://vonkelemen.org/vector/vk1.svg" alt="logovonk" width="260px"> 
+                </div>
+            </div>
+			
         </ion-content>
     </ion-side-menu>
 

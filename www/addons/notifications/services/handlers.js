@@ -68,7 +68,7 @@ angular.module('mm.addons.notifications')
                     $mmaPushNotifications = $mmAddonManager.get('$mmaPushNotifications'),
                     readChangedObserver, cronObserver;
 
-                $scope.icon = 'ion-ios-bell';
+                $scope.icon = 'ion-ios-bell-outline';
                 $scope.title = 'mma.notifications.notifications';
                 $scope.state = 'site.notifications';
                 $scope.class = 'mma-notifications-handler';

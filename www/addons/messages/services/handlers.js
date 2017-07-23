@@ -278,7 +278,7 @@ angular.module('mm.addons.messages')
             return function($scope) {
                 $scope.title = 'mma.messages.message';
                 $scope.class = 'mma-messages-sendmessage-handler';
-                $scope.icon = 'ion-chatbubble';
+                $scope.icon = 'ion-chatbubbles';
                 $scope.action = function($event) {
                     $event.preventDefault();
                     $event.stopPropagation();
@@ -333,7 +333,7 @@ angular.module('mm.addons.messages')
                     $mmaPushNotifications = $mmAddonManager.get('$mmaPushNotifications'),
                     readChangedObserver, cronObserver;
 
-                $scope.icon = 'ion-chatbox';
+                $scope.icon = 'ion-ios-chatboxes-outline';
                 $scope.title = 'mma.messages.messages';
                 $scope.state = 'site.messages';
                 $scope.class = 'mma-messages-handler';

@@ -52,9 +52,9 @@ $item-input-padding: 16px !default;
  * App Branding
  */
 .mm-bglogo {
-  background-color: #ff5c00; /* Change this to add a bg image or change color */
-  background: -webkit-radial-gradient(#ff7600, #ff5c00);
-  background: radial-gradient(#ff7600, #ff5c00);
+  background-color: #EFEFEF; /* Change this to add a bg image or change color */
+  background: -webkit-radial-gradient(#EFEFEF, #EFEFEF);
+  background: radial-gradient(#EFEFEF, #EFEFEF);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -1632,4 +1632,25 @@ h2.invert {
   &.ng-leave.ng-leave-active {
     opacity: 0;
   }
+}
+button.button.action-sheet-option.ng-binding.mma-grades-mine-handler {
+    display: none;
+}
+.mm-button-completion button.button.button-icon {
+	display:none;
+    background: transparent;
+    border: none;
+}
+.mm-button-completion button.button.button-icon i.icon{
+    color:#313540;
+}
+li.mm-sidemenu-handler.mma-competency-handler, li.mm-sidemenu-handler.mma-calendar-handler, li.mm-sidemenu-handler.mma-files-handler {
+	display: none;
+}
+.tab-item.mma-competency-handler {
+	display: none; 
+}
+.video-container iframe {
+    position: inherit!important;
+	height: auto!important;
 }
