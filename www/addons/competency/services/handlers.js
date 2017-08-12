@@ -282,7 +282,7 @@ angular.module('mm.addons.competency')
                         });
                     };
                 } else {
-                    $scope.icon = 'ion-map';
+                    /*$scope.icon = 'ion-map';
                     $scope.title = 'mma.competency.learningplans';
                     $scope.action = function($event) {
                         $event.preventDefault();
@@ -290,7 +290,7 @@ angular.module('mm.addons.competency')
                         $state.go('site.learningplans', {
                             userid: user.id
                         });
-                    };
+                    };*/
                 }
             };
 
